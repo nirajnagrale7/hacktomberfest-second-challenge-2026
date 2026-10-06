@@ -157,7 +157,6 @@ def write_seed_csv(source_path: Path):
 
 
 def convert_csv_to_json(source_path: Path = SOURCE, dest_path: Path = DEST):
-    source_path.parent.mkdir(parents=True, exist_ok=True)
     if not source_path.exists():
         write_seed_csv(source_path)
 
